@@ -1,7 +1,7 @@
 # DXImagePickView
 仿QQ照片选择效果,可以快速选择相册中的照片，也可以选择每个照片组的所用照片
 # 效果图
-![][image-1]
+![image](https://github.com/ding379985418/DXImagePickView/blob/master/photoPickView.gif)
 # 使用方法
 ## 1、快速初始化：
 	DXImagePickView *pickView = [DXImagePickView imagePickView];
@@ -13,5 +13,3 @@
 	- (void)imagePickView:(DXImagePickView *)imagePickView didSendImages:(NSArray *)images{
 	//拿到选择的照片的数组 images
 	}
-
-[image-1]:	https://github.com/ding379985418/DXImagePickView/blob/master/photoPickView.gif
