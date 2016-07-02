@@ -1,6 +1,9 @@
 # DXImagePickView
 仿QQ照片选择效果,可以快速选择相册中的照片，也可以选择每个照片组的所用照片
 # 效果图
+![image](https://github.com/ding379985418/DXImagePickView/blob/master/imagePickView_1.png)
+![image](https://github.com/ding379985418/DXImagePickView/blob/master/imagePickView_2.png)
+![image](https://github.com/ding379985418/DXImagePickView/blob/master/imagePickView_3.png)
 ![image](https://github.com/ding379985418/DXImagePickView/blob/master/photoPickView.gif)
 # 使用方法
 ## 1、快速初始化：
