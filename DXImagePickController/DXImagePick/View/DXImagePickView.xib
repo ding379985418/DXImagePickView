@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DXImagePickView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0OP-ei-2Fm">
+                    <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ith-Ai-wqI">
+                            <rect key="frame" x="20" y="7" width="30" height="30"/>
+                            <state key="normal" title="相册"/>
+                            <connections>
+                                <action selector="photoAlbumBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="42y-gZ-UWY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHz-gh-U1p">
+                            <rect key="frame" x="130" y="7" width="30" height="30"/>
+                            <state key="normal" title="原图"/>
+                            <connections>
+                                <action selector="origalImageBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="qbs-bo-hWp"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gnl-NS-wjd">
+                            <rect key="frame" x="555" y="7" width="30" height="30"/>
+                            <state key="normal" title="发送"/>
+                            <connections>
+                                <action selector="sendBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="bBR-XE-5xR"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRo-Ho-Kbf">
+                            <rect key="frame" x="70" y="7" width="30" height="30"/>
+                            <state key="normal" title="编辑"/>
+                            <connections>
+                                <action selector="editBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="QVJ-QS-YDS"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Ith-Ai-wqI" firstAttribute="centerY" secondItem="0OP-ei-2Fm" secondAttribute="centerY" id="4Uc-NG-eQP"/>
+                        <constraint firstItem="RRo-Ho-Kbf" firstAttribute="leading" secondItem="Ith-Ai-wqI" secondAttribute="trailing" constant="20" id="EWK-0g-34h"/>
+                        <constraint firstItem="Gnl-NS-wjd" firstAttribute="centerY" secondItem="0OP-ei-2Fm" secondAttribute="centerY" id="XHY-k8-Xna"/>
+                        <constraint firstItem="RHz-gh-U1p" firstAttribute="leading" secondItem="RRo-Ho-Kbf" secondAttribute="trailing" constant="30" id="XNW-Jj-nTI"/>
+                        <constraint firstAttribute="trailing" secondItem="Gnl-NS-wjd" secondAttribute="trailing" constant="15" id="YSQ-cY-5y3"/>
+                        <constraint firstItem="RHz-gh-U1p" firstAttribute="centerY" secondItem="0OP-ei-2Fm" secondAttribute="centerY" id="a0d-SN-omx"/>
+                        <constraint firstAttribute="height" constant="44" id="fTK-ii-YGm"/>
+                        <constraint firstItem="Ith-Ai-wqI" firstAttribute="leading" secondItem="0OP-ei-2Fm" secondAttribute="leading" constant="20" id="th0-JT-vhm"/>
+                        <constraint firstItem="RRo-Ho-Kbf" firstAttribute="centerY" secondItem="0OP-ei-2Fm" secondAttribute="centerY" id="u2C-X2-Pyc"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lZB-h8-c8u" customClass="DXImagePickView">
+                    <rect key="frame" x="0.0" y="406" width="600" height="150"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="E1F-1D-5QL"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pH-d6-4kd">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="406"/>
+                    <connections>
+                        <action selector="dismissBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="lpE-zY-fXa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lZB-h8-c8u" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2iX-49-vEb"/>
+                <constraint firstItem="lZB-h8-c8u" firstAttribute="top" secondItem="7pH-d6-4kd" secondAttribute="bottom" id="3M9-8e-mH7"/>
+                <constraint firstAttribute="bottom" secondItem="0OP-ei-2Fm" secondAttribute="bottom" id="K5E-FN-WHh"/>
+                <constraint firstAttribute="trailing" secondItem="0OP-ei-2Fm" secondAttribute="trailing" id="KzJ-Ri-SFd"/>
+                <constraint firstItem="7pH-d6-4kd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MPj-Kf-Yfu"/>
+                <constraint firstAttribute="trailing" secondItem="7pH-d6-4kd" secondAttribute="trailing" id="P2b-r6-vnB"/>
+                <constraint firstAttribute="trailing" secondItem="lZB-h8-c8u" secondAttribute="trailing" id="cFw-uY-cQG"/>
+                <constraint firstItem="0OP-ei-2Fm" firstAttribute="top" secondItem="lZB-h8-c8u" secondAttribute="bottom" id="fXK-gZ-1OV"/>
+                <constraint firstItem="0OP-ei-2Fm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gFh-VX-jdC"/>
+                <constraint firstItem="7pH-d6-4kd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xcJ-uo-GIz"/>
+            </constraints>
+            <connections>
+                <outlet property="containView" destination="lZB-h8-c8u" id="nNW-6p-RlE"/>
+                <outlet property="editBtn" destination="RRo-Ho-Kbf" id="bok-bF-OOK"/>
+                <outlet property="origalImageBtn" destination="RHz-gh-U1p" id="A2r-TO-3Dn"/>
+                <outlet property="photoAlbumBtn" destination="Ith-Ai-wqI" id="ETV-lv-wM0"/>
+                <outlet property="sendBtn" destination="Gnl-NS-wjd" id="G8T-1q-1hn"/>
+                <outlet property="toolBar" destination="0OP-ei-2Fm" id="V5M-Dn-xig"/>
+            </connections>
+            <point key="canvasLocation" x="307" y="30"/>
+        </view>
+    </objects>
+</document>
